@@ -4,7 +4,7 @@ from flask import Flask, send_file, Response
 from bs4 import BeautifulSoup
 
 app = Flask(__name__)
-app.secret_key = os.environ.get('SECRET_KEY').encode()
+# app.secret_key = os.environ.get('SECRET_KEY').encode()
 
 def get_fact():
     response = requests.get("http://unkno.com")
